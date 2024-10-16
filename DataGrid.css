@@ -1,0 +1,101 @@
+.data-table th,
+.data-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f4f4f4;
+    min-width: 10px;
+}
+
+.data-table th:hover {
+    background-color: #ededed;
+}
+
+.data-table tr.selected {
+    background-color: #ecf7ff;
+}
+
+.data-table tr.selected:hover {
+    background-color: #d7eeff;
+}
+
+tr:hover {
+    background-color: #e8f4fd;
+}
+
+.table-row {
+    padding: 10px 8px;
+    min-height: 30px;
+    /* text-wrap: wrap; */
+}
+
+.table-cell {
+    padding: 8px;
+    /* Cell padding for vertical and horizontal spacing */
+    word-wrap: initial;
+    text-overflow: ellipsis;
+}
+
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+    margin-top: -1px;
+    width: 100%;
+}
+
+
+
+/* Icons */
+.forwardAndBackwardDiv {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.IoIosArrowBack,
+.IoIosArrowForward {
+    width: 23px;
+    height: auto;
+    color: #999;
+    cursor: pointer;
+}
+
+.IoIosArrowBack:hover {
+    color: #343434;
+}
+
+.IoIosArrowForward:hover {
+    color: #343434;
+}
+
+/* Disabled styling */
+.disabled {
+    color: #dadada;
+    cursor: not-allowed;
+    pointer-events: none;
+    /* Disable interaction */
+}
+
+
+
+/* Define the wave animation for loading*/
+@keyframes wave {
+    0% {
+        background-position: 200% 0;
+        /* Start from right */
+    }
+
+    100% {
+        background-position: -200% 0;
+        /* Move to left */
+    }
+}
